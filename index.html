@@ -155,8 +155,8 @@
 	    and significantly reduces memory consumption and computational overhead with the same precision.
           </p>
           <p>
-            Our method based on PointNet with 2048 points input achieves 82.46mm in MPJPE3D on the <a href="https://github.com/SensorsINI/DHP19">DHP19 dataset</a>, 
-	    while only has a latency of 12.29ms on an NVIDIA Jetson Xavier NX edge computing platform, 
+            Our method based on PointNet with 2048 points input achieves <b>82.46mm</b> in MPJPE3D on the <a href="https://github.com/SensorsINI/DHP19">DHP19 dataset</a>, 
+	    while only has a latency of <b>12.29ms</b> on an NVIDIA Jetson Xavier NX edge computing platform, 
 	    which is ideally suitable for real-time detection with event cameras.
           </p>
         </div>
@@ -175,7 +175,6 @@
           class="model"
           alt="pipeline image."
 	  width="100%"/>
-          <h2 class="subtitle has-text-justified">
             <p>
               The raw 3D event point cloud is first rasterized, and then processed by the point cloud backbone. The 
 	      features output from the backbone are then connected to linear layers to predict two vectors. 
@@ -183,7 +182,6 @@
 	      Our methods can be easily deployed and integrated to work with different 3D learning architectures, adapted to event-based HPE.
 	      We test PointNet, DGCNN, and Point Transformer in our work.
             </p>
-          </h2>
         </div>
 
         <h2 class="title is-3">Event Representation</h2>
@@ -195,11 +193,11 @@
           alt="rasterization image."
           width="90%"/>
          </p>
-          <h2 class="subtitle has-text-centered">
+          <p>
           <b>Schematic diagram of event point cloud rasterization.</b> (a) Raw 3D event point cloud input, (b) Time slice of event point cloud,
           (c) Rasterized event point cloud at (x, y) position. Note that the rasterization process preserves the discrete nature of the point cloud, rather
           than the 2D image.
-          </h2>
+          </p>
         </div>
         </div>
       </div>
@@ -319,7 +317,7 @@
           <img src="./figures/visualization.png"
            class="model"
            alt="visualization image."
-	   width="90%"/>
+	   width="95%"/>
          </div>
       </div>
     </div>
