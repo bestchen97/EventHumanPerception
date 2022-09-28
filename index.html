@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Event-based Fusion for Motion Deblurring with Cross-modal Attention.">
-  <meta name="keywords" content="Event, Deblur, Attention">
+        content="Event-based Human Perception.">
+  <meta name="keywords" content="Event, Human Pose Estimation, Human Action Recognition">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Event-based Fusion for Motion Deblurring with Cross-modal Attention</title>
+  <title>Efficient Human Pose Estimation via 3D Event Point Cloud</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -41,41 +41,31 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Event-based Fusion for Motion Deblurring with Cross-modal Attention</h1>
-          <h2 class="title is-4">ECCV'2022 Oral</h2>
+          <h1 class="title is-1 publication-title">Efficient Human Pose Estimation via 3D Event Point Cloud</h1>
+          <h2 class="title is-4">3DV'2022</h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://ahupujr.github.io">Lei Sun</a><sup>1,2</sup>,</span>
-            <span class="author-block">
-              <a href="https://people.ee.ethz.ch/~csakarid">Christos Sakaridis</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://jingyunliang.github.io">Jingyun Liang</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              Qi Jiang<sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://yangkailun.com">Kailun Yang</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              Peng Sun<sup>1</sup>,
+              Jiaan Chen<sup>1,*</sup>,</span>
+	    <span class="author-block">
+              Hao Shi<sup>1,*</sup>,
             </span>
             <span class="author-block">
               Yaozu Ye<sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://wangkaiwei.org">Kaiwei Wang</a><sup>1</sup>,
+              <a href="https://yangkailun.com">Kailun Yang</a><sup>2</sup>,
             </span>
+	    <span class="author-block">
+              <a href="https://ahupujr.github.io">Lei Sun</a><sup>1,3</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl">Luc Van Gool</a><sup>2</sup>
+              <a href="https://wangkaiwei.org">Kaiwei Wang</a><sup>1</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>ZhejiangUniversity,</span>
-            <span class="author-block"><sup>2</sup>ETH Zurich,</span>
-            <span class="author-block"><sup>3</sup>KIT,</span>
-            <span class="author-block"><sup>4</sup>KU Leuven</span>
+            <span class="author-block"><sup>2</sup>KIT,</span>
+            <span class="author-block"><sup>3</sup>ETH Zurich,</span>
 
           </div>
 
@@ -83,7 +73,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2112.00167"
+                <a href="https://arxiv.org/abs/2206.04511"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -92,7 +82,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2112.00167"
+                <a href="https://arxiv.org/abs/2206.04511"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -100,19 +90,9 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/AHupuJR/EFNet"
+                <a href="https://github.com/MasterHow/EventPointPose"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -120,15 +100,6 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/AHupuJR/EFNet"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
           </div>
         </div>
@@ -142,11 +113,11 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./figures/model.png"
+      <img src="./figures/paradigm.png"
       class="model"
-      alt="model image."/>
+      alt="paradigm image."/>
       <h2 class="subtitle has-text-centered">
-        EFNet restores blurry image with high-temporal-resolution events.
+        2D event frame based human pose estimation paradigm vs. the proposed novel 3D event point cloud based paradigm.
       </h2>
     </div>
   </div>
@@ -162,29 +133,26 @@
         <div class="content has-text-justified">
 
           <p>
-            Traditional frame-based cameras inevitably suffer from motion blur due to long exposure times.
-            As a kind of bio-inspired camera, the event camera records the intensity changes in 
-            an asynchronous way with high temporal resolution, providing valid image degradation information
-            within the exposure time. 
+            Human Pose Estimation (HPE) based on RGB images has experienced a rapid development benefiting from deep learning. 
+	    However, event-based HPE has not been fully studied, which remains great potential for applications in extreme scenes 
+	    and efficiency-critical conditions. In this project, we are the first to estimate 2D human pose directly from 3D event point cloud. 
           </p>
           <p>
-            In this work, We rethink the event-based image deblurring problem and unfold it into 
-            an end-to-end two-stage image restoration network. To effectively fuse event and image features,
-            we design an event-image cross-modal attention module applied at multiple levels of our network, 
-            which allows to focus on relevant features from the event branch and filter out noise. 
+	    HPE meets challenges with the drawbacks of frame-based cameras. The prediction of keypoints in scenarios with motion blur 
+	    or high dynamic range will be inaccurate. Event cameras, such as the Dynamic Vision Sensor (DVS), a kind of bio-inspired 
+	    asynchronous sensor responding to changes in brightness on each pixel independently, with higher dynamic range (over 100dB) and 
+	    larger temporal resolution (in the order of us), can tackle these disadvantages, which could maintain stable output in such extreme scenes.
           </p>
           <p>
-            We also introduce a novel symmetric cumulative event representation specifically for
-            image deblurring as well as an event mask gated connection between the two stages of our network 
-            which helps avoid information loss. At the dataset level, to foster event-based motion deblurring 
-            and to facilitate evaluation on challenging real-world images, we introduce the Real Event Blur (REBlur)
-            dataset, captured with an event camera in an illumination controlled optical laboratory.
+            We explore the feasibility of estimating human pose from 3D event point clouds directly, which is the first work from this perspective to our best knowledge.
+	    We demonstrate the effectiveness of well-known LiDAR point cloud learning backbones for event point cloud based human pose estimation.
+	    We propose a new event representation–rasterized event point cloud, which maintains the 3D features from multiple statistical cues 
+	    and significantly reduces memory consumption and computational overhead with the same precision.
           </p>
           <p>
-            Our Event Fusion Network (EFNet) sets the new state of the art in motion deblurring, 
-            surpassing both the prior best-performing image-based method and all event-based methods 
-            with public implementations on the GoPro dataset (by up to 2.47dB) and on our REBlur dataset,
-            even in extreme blurry conditions.
+            Our method based on PointNet with 2048 points input achieves 82.46mm in MPJPE3D on the DHP19 dataset, 
+	    while only has a latency of 12.29ms on an NVIDIA Jetson Xavier NX edge computing platform, 
+	    which is ideally suitable for real-time detection with event cameras.
           </p>
         </div>
       </div>
