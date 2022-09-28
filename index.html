@@ -284,11 +284,53 @@
          </div>
       </div>
     </div>
-
-
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Comparison Results</h2>
+    <div class="columns is-centered">
+
+      <!-- denoiseevent. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-5">New device test (captured by a DAVIS camera)</h2>
+	  <p>
+            For the new data with different devices, our approach still delivers impressive results. 
+	    Moreover, we find that the DHP19 model fails on the new data despite the conducted denoising and filtering. 
+	    While, our models based on event point cloud with a multidimensional feature generalize well to such unseen 
+	    domains and is robust to the noise brought by the background as well as the device itself.
+          </p>
+          <img src="./figures/denoiseevent.gif"
+           class="model"
+           alt="model image."
+	   width="80%"/>
+        </div>
+      </div>
+      <!--/ denoiseevent. -->
+
+      <!-- static limb. -->
+      <div class="column">
+        <h2 class="title is-5">DHP19 test dataset</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+	  <p>
+            We find that our event point cloud based method is more robust when facing static limbs than the DHP19 model. 
+	    Static limbs during the movement generate few events which lead to invisible parts when accumulating events to a constant count event frame. 
+	    However, such few events are retained in the event point cloud, and they could be processed by the point-wise backbone more effectively.
+          </p>
+            <img src="./figures/static.gif"
+           class="model"
+           alt="model image."
+	   width="80%"/>
+          </div>
+        </div>
+      </div>
+    <!--/ static limb. -->
+	  
+  </div>
+</section>
 
 
 <section class="section" id="BibTeX">
