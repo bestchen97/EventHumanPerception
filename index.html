@@ -175,6 +175,7 @@
           class="model"
           alt="pipeline image."
 	  width="100%"/>
+	  <div class="content has-text-justified">
             <p>
               The raw 3D event point cloud is first rasterized, and then processed by the point cloud backbone. The 
 	      features output from the backbone are then connected to linear layers to predict two vectors. 
@@ -182,6 +183,7 @@
 	      Our methods can be easily deployed and integrated to work with different 3D learning architectures, adapted to event-based HPE.
 	      We test PointNet, DGCNN, and Point Transformer in our work.
             </p>
+	  </div>
         </div>
 
         <h2 class="title is-3">Event Representation</h2>
@@ -193,11 +195,14 @@
           alt="rasterization image."
           width="90%"/>
          </p>
+	 <div class="content has-text-justified">
           <p>
           <b>Schematic diagram of event point cloud rasterization.</b> (a) Raw 3D event point cloud input, (b) Time slice of event point cloud,
           (c) Rasterized event point cloud at (x, y) position. Note that the rasterization process preserves the discrete nature of the point cloud, rather
           than the 2D image.
           </p>
+	 </div>
+		
         </div>
         </div>
       </div>
