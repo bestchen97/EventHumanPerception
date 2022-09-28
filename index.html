@@ -117,7 +117,7 @@
       <img src="./figures/paradigm.png"
       class="model"
       alt="paradigm image."
-      width="90%"/>
+      width="85%"/>
       <h2 class="subtitle has-text-centered">
         2D event frame based human pose estimation paradigm vs. the proposed novel 3D event point cloud based paradigm.
       </h2>
@@ -169,7 +169,7 @@
     <section class="section">
     <section class="hero teaser">
       <div class="container is-max-desktop">
-        <h2 class="title is-3">Modules</h2>
+        <h2 class="title is-3">Pipeline</h2>
         <div class="hero-body">
           <img src="./figures/pipeline.png"
           class="model"
@@ -178,7 +178,9 @@
             <p>
               The raw 3D event point cloud is first rasterized, and then processed by the point cloud backbone. The 
 	      features output from the backbone are then connected to linear layers to predict two vectors. 
-	      2D positions of human keypoints are proposed via decoding the two vectors.
+	      2D positions of human keypoints are proposed via decoding the two vectors. 
+	      Our methods can be easily deployed and integrated to work with different 3D learning architectures, adapted to event-based HPE.
+	      We test PointNet, DGCNN, and Point Transformer in our work.
             </p>
           </h2>
         </div>
@@ -245,7 +247,7 @@
           <img src="./figures/sub13_session4_mov1_3D.gif"
            class="model"
            alt="model image."
-	   width="90%"/>
+	   width="50%"/>
              <h2 class="subtitle has-text-centered">
              
           </h2>
@@ -256,7 +258,7 @@
           <img src="./figures/sub15_session4_mov2_3D.gif"
            class="model"
            alt="model image."
-	   width="90%"/>
+	   width="50%"/>
              <h2 class="subtitle has-text-centered">
              
           </h2>
