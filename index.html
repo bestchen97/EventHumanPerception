@@ -1,3 +1,374 @@
-<p>Hello 大家好</p>
-<p>我是chen。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Event-based Fusion for Motion Deblurring with Cross-modal Attention.">
+  <meta name="keywords" content="Event, Deblur, Attention">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event-based Fusion for Motion Deblurring with Cross-modal Attention</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+</head>
+
+
+
+
+
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Event-based Fusion for Motion Deblurring with Cross-modal Attention</h1>
+          <h2 class="title is-4">ECCV'2022 Oral</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ahupujr.github.io">Lei Sun</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://people.ee.ethz.ch/~csakarid">Christos Sakaridis</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://jingyunliang.github.io">Jingyun Liang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Qi Jiang<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://yangkailun.com">Kailun Yang</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              Peng Sun<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Yaozu Ye<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://wangkaiwei.org">Kaiwei Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl">Luc Van Gool</a><sup>2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>ZhejiangUniversity,</span>
+            <span class="author-block"><sup>2</sup>ETH Zurich,</span>
+            <span class="author-block"><sup>3</sup>KIT,</span>
+            <span class="author-block"><sup>4</sup>KU Leuven</span>
+
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2112.00167"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2112.00167"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/AHupuJR/EFNet"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/AHupuJR/EFNet"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./figures/model.png"
+      class="model"
+      alt="model image."/>
+      <h2 class="subtitle has-text-centered">
+        EFNet restores blurry image with high-temporal-resolution events.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+
+          <p>
+            Traditional frame-based cameras inevitably suffer from motion blur due to long exposure times.
+            As a kind of bio-inspired camera, the event camera records the intensity changes in 
+            an asynchronous way with high temporal resolution, providing valid image degradation information
+            within the exposure time. 
+          </p>
+          <p>
+            In this work, We rethink the event-based image deblurring problem and unfold it into 
+            an end-to-end two-stage image restoration network. To effectively fuse event and image features,
+            we design an event-image cross-modal attention module applied at multiple levels of our network, 
+            which allows to focus on relevant features from the event branch and filter out noise. 
+          </p>
+          <p>
+            We also introduce a novel symmetric cumulative event representation specifically for
+            image deblurring as well as an event mask gated connection between the two stages of our network 
+            which helps avoid information loss. At the dataset level, to foster event-based motion deblurring 
+            and to facilitate evaluation on challenging real-world images, we introduce the Real Event Blur (REBlur)
+            dataset, captured with an event camera in an illumination controlled optical laboratory.
+          </p>
+          <p>
+            Our Event Fusion Network (EFNet) sets the new state of the art in motion deblurring, 
+            surpassing both the prior best-performing image-based method and all event-based methods 
+            with public implementations on the GoPro dataset (by up to 2.47dB) and on our REBlur dataset,
+            even in extreme blurry conditions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+
+    <!-- Modules -->
+    <section class="section">
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Modules</h2>
+        <div class="hero-body">
+          <img src="./figures/module.png"
+          class="model"
+          alt="model image."/>
+          <h2 class="subtitle has-text-justified">
+            <p>
+              <b>EICA</b> uses a multi-head attention mechanism to fuse event and image features. 
+            We transpose the feature maps to reduce the computation complexity from O(h<sup>2</sup>w<sup>2</sup>) to O(c<sup>2</sup>) 
+            for high-resolution event-based image deblurring.
+            </p>
+            <p>
+            <b>EMGC</b> selectively connects certain regions of the feature maps of the first stage of our network to the second stage. 
+            This is inspired by the observation that regions in which events occur are more severely degraded in the blurry image. 
+            We binarize the events and use the resulting "event mask" to guide the restoration.
+            </p>
+          </h2>
+        </div>
+
+        <h2 class="title is-3">Event Representation</h2>
+        <div class="columns is-centered">
+        <div class="column is-full-width">
+          <p style="text-align: center;">
+          <img src="./figures/scer.png"
+          class="model"
+          alt="model image."
+          width="50%"/>
+         </p>
+          <h2 class="subtitle has-text-centered">
+          <b>Symmetric Cumulative Event Representation (SCER)</b> feed the asynchronous events to our network, and encodes information about blur in the image by accumulating events at symmetric endpoints.
+
+          </h2>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modules -->
+
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Results. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Qualitative Results</h2>
+
+        <!-- Interpolating. -->
+        <!-- <h3 class="title is-4">Interpolating states</h3> -->
+        <!-- <div class="content has-text-justified">
+          <p>
+            We can also animate the scene by interpolating the deformation latent codes of two input
+            frames. Use the slider here to linearly interpolate between the left frame and the right
+            frame.
+          </p>
+        </div> -->
+        <h3 class="title is-4">GoPro</h3>
+         <div class="hero-body">
+          <h2 class="subtitle has-text-justified">
+              <span style="width: 80px;; display:inline-block"> </span> 
+              <b>Blurry image</b>
+              <span style="width: 140px;; display:inline-block"> </span> 
+              <b>Each Channel in SCER</b>  
+              <span style="width: 160px;; display:inline-block"> </span>  
+              <b>Result</b>             
+          </h2>
+          <img src="./figures/GOPR0384_11_00.gif"
+           class="model"
+            alt="model image."/>
+         </div>
+
+         <div class="hero-body">
+          <img src="./figures/GOPR0410_11_00.gif"
+           class="model"
+            alt="model image."/>
+             <h2 class="subtitle has-text-centered">
+             
+          </h2>
+         </div>
+
+         <div class="hero-body">
+          <img src="./figures/GOPR0854_11_00.gif"
+           class="model"
+            alt="model image."/>
+             <h2 class="subtitle has-text-centered">
+             
+          </h2>
+         </div>
+
+         <h3 class="title is-4">REBlur</h3>
+         <div class="hero-body">
+          <h2 class="subtitle has-text-justified">
+            <span style="width: 80px;; display:inline-block"> </span> 
+            <b>Blurry image</b>
+            <span style="width: 140px;; display:inline-block"> </span> 
+            <b>Each Channel in SCER</b>  
+            <span style="width: 160px;; display:inline-block"> </span>  
+            <b>Result</b>             
+        </h2>
+          <img src="./figures/camera-fast.gif"
+           class="model"
+            alt="model image."/>
+             <h2 class="subtitle has-text-centered">
+             
+          </h2>
+         </div>
+         <div class="hero-body">
+          <img src="./figures/checkbox-slow.gif"
+           class="model"
+            alt="model image."/>
+             <h2 class="subtitle has-text-centered">
+             
+          </h2>
+         </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{sun2022event,
+      author = {Sun, Lei and Sakaridis, Christos and Liang, Jingyun and Jiang, Qi and Yang, Kailun and Sun, Peng and Ye, Yaozu and Wang, Kaiwei and Van Gool, Luc},
+      title = {Event-Based Fusion for Motion Deblurring with Cross-modal Attention},
+      booktitle = {European Conference on Computer Vision (ECCV)},
+      year = 2022
+      }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2112.00167">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/ahupujr" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
